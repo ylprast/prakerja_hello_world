@@ -5,408 +5,385 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
+        <title>Yuliana's Portofolio</title>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-        <title>Yuliana's Portofolio</title>
-<style>
-            :root {
-              --white-color:                  #ffffff;
-              --primary-color:                #81B29A;
-              --secondary-color:              #3D405B;
-              --section-bg-color:             #F4F1DE;
-              --custom-btn-bg-color:          #F2CC8F;
-              --custom-btn-bg-hover-color:    #E07A5F;
-              --dark-color:                   #000000;
-              --p-color:                      #717275;
-              --link-hover-color:             #F2CC8F;
-            
-              --body-font-family:             'DM Sans', sans-serif;
-            
-              --h1-font-size:                 42px;
-              --h2-font-size:                 36px;
-              --h3-font-size:                 28px;
-              --h4-font-size:                 24px;
-              --h5-font-size:                 22px;
-              --h6-font-size:                 20px;
-              --p-font-size:                  18px;
-              --menu-font-size:               16px;
-              --btn-font-size:                14px;
-            
-              --border-radius-large:          100px;
-              --border-radius-medium:         20px;
-              --border-radius-small:          10px;
-            
-              --font-weight-normal:           400;
-              --font-weight-medium:           500;
-              --font-weight-bold:             700;
-
-            }
-            
-body {
-  background-color: var(--white-color);
-  font-family: var(--body-font-family); 
-  overflow: auto;
-  margin: 0;
-  padding:0;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: center;
-  background-color: #fff;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-}
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-collapse {
-        display: flex !important;
-        flex-basis: auto;
-    }
-}
-.container {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    width: 100%;
-    padding-right: calc(var(--bs-gutter-x)* .5);
-    padding-left: calc(var(--bs-gutter-x)* .5);
-    margin-right: auto;
-    margin-left: auto;
-}
-.hero-50 .container  {
-  transform: rotate(180deg);
-}
-.hero-section .container {
-  top: auto;
-  bottom: -1px;
-}
-.section-bg-image .container {
-  transform: rotate(180deg);
-  position: relative;
-  bottom: -1px;
-}
-.site-footer .container {
-  position: relative;
-  z-index: 2;
-}
-/*---------------------------------------
-    NAVIGATION BAR            
------------------------------------------*/
-.navbar .navbar-brand-image {
-  filter: brightness(0) invert(1);
-}
-
-.navbar-brand-image {
-  width: 48px;
-  height: 48px;
-}
-.navbar-brand,
-.navbar-brand:hover {
-  font-size: var(--h4-font-size);
-  font-weight: var(--font-weight-bold);
-  display: block;
-  color: var(--dark-color);
-  max-width: 48px;
-}
-
-.navbar .navbar-brand,
-.navbar .navbar-brand:hover {
-  color: var(--white-color);
-}
-.navbar {
-  background-color: var(--secondary-color);
-  z-index: 99;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.navbar-nav .dropdown-menu {
-  position: relative;
-  left: 10px;
-  opacity: 1;
-  pointer-events: auto;
-  max-width: 155px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.navbar-expand-lg .navbar-nav {
-  padding-top: 15px;
-  padding-bottom: 10px;
-}
-.navbar-expand-lg .navbar-nav .nav-link {
-  border-radius: 100;
-  margin: 10px;
-  padding: 10px;
-}
-.navbar-nav .nav-link {
-    display: inline-block;
-    color: var(--white-color);
-    font-size: var(--menu-font-size);
-    font-weight: var(--font-weight-medium);
-}
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
-    cursor: pointer;
-}
-.navbar-toggler .navbar-toggler-icon::after {
-    top: 8px;
-}
-.navbar-toggler {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    width: 30px;
-    height: 35px;
-    line-height: 1;
-}
-.navbar-toggler:focus {
-    outline: 0;
-    box-shadow: none;
-}
-.custom-btn {
-  background: var(--custom-btn-bg-color);
-  border: 2px solid transparent;
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-size: var(--btn-font-size);
-  font-weight: var(--font-weight-bold);
-  line-height: normal;
-  transition: all 0.3s;
-  padding: 10px 20px;
-}
-.custom-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
-  color: var(--white-color);
-}            
-.custom-border-btn {
-  background: transparent;
-  border: 2px solid var(--custom-btn-bg-color);
-  color: var(--custom-btn-bg-color);
-}
-.custom-border-btn:hover {
-  background: var(--custom-btn-bg-color);
-  border-color: transparent;
-  color: var(--white-color);
-}
-.custom-btn-bg-white {
-  border-color: var(--white-color);
-  color: var(--white-color);
-}
-.custom-btn-group .link {
-  color: var(--white-color);
-  font-weight: var(--font-weight-medium);
-}
-            
-.custom-btn-group .link:hover {
-  color: var(--link-hover-color);
-}
-
-ul li {
-  color: var(--p-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-normal);
-  display: flex;
-  float: right;
-  overflow: hidden;
-  text-align: center;
-  margin: 0;
-  padding: 12px 30px;
-}
-
-a, 
-button {
-  touch-action: manipulation;
-  transition: all 0.3s;
-}
-
-a {
-  display: inline-block;
-  color: var(--white-color);
-  text-decoration: none;
-}
-.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-}
-a:hover {
-  color: var(--link-hover-color);
-}
-b,
-strong {
-  font-weight: var(--font-weight-bold);
-}
-
-/*---------------------------------------
-  SECTION               
------------------------------------------*/
-.section-bg {
-  background-color: var(--section-bg-color);
-}
-
-.section-padding {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-::selection {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-}
-
-/*---------------------------------------
-    FOOTER            
------------------------------------------*/
-.site-footer {
-  position: relative;
-  padding-bottom: 200px;
-}
-
-.site-footer .container {
-  position: relative;
-  z-index: 2;
-}
-
-.site-footer svg {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-.site-footer-title {
-  color: var(--secondary-color);
-}
-
-.site-footer p span {
-  font-weight: var(--font-weight-medium);
-  margin-right: auto;
-}
-.navbar-brand-text {
-  line-height: normal;
-  margin-left: 10px;
-  position: relative;
-  bottom: 5px;
-  margin-bottom: auto;
-  padding-bottom: 10px;
-}
-
-.navbar-brand-text small {
-  display: block;
-  font-size: 10px;
-  line-height: 1;
-  text-transform: uppercase;
-}
-</style>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/css/custom.css" rel="stylesheet">   
 </head>
 <body>
-   
 	<header>
-    <div id="yuli-nav" class="yuli-nav" style="height: 94px;">
-		    <nav class="navbar navbar-expand-lg" style="width: 1303px;">                
-                <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="learn.html">
-                      <img src="img/logo.png" class="navbar-brand-image img-fluid"/>  
-                      <span class="navbar-brand-text">
-                            Yuliana's
-                            <small>Portfolio</small>
-                        </span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon">
+    <nav class="navbar navbar-expand-lg">                
+      <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="learn.html">
+              <img src="img/logo.png" class="navbar-brand-image img-fluid" alt="Yuli's Portofolio">
+              <span class="navbar-brand-text">
+                  Yuliana's
+                  <small>Portfolio</small>
+              </span>
+          </a>
 
-                      </span>
-                  </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav" ms-lg-auto>
-                            <li>
-                                <a class="btn" href="#section_1">Dashboard</a>
-                            </li>
-    
-                            <li>
-                                <a class="btn" href="#section_2">About Me</a>
-                            </li>
-                            <li>
-                                <a class="btn" href="contact-me.html">Contact Me</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-              </div>
-            </nav>
-        </header>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-lg-auto">
+                  <li>
+                      <a class="nav-link click-scroll" href="#section_1">Dashboard</a>
+                  </li>
+
+                  <li>
+                      <a class="nav-link click-scroll" href="#section_2">About Me</a>
+                  </li>
+
+                  <li>
+                      <a class="nav-link click-scroll" href="#section_3">Work Experience</a>
+                  </li>
+
+                  <li>
+                      <a class="nav-link click-scroll" href="#section_4">Project</a>
+                  </li>
+
+                  <li>
+                      <a class="nav-link click-scroll" href="#footer">Contact Me</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</header>
 <main>
   <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+  
+  <div class="section-overlay"></div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
-<section id="section_1" class="padding about-section section-padding">
-    <div class="section-overlay"></div>
-                <div class="container">
-                    <div class="row">
+    
+    <div class="container">
+      <div class="row">
 
-                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                            <h2>Get to know me</h2>
-                            <img src="img/yuli.jpg" alt="Yuli's photo" width="500px" height="300px">
-                            <h1>
-                                <span>
-                                    <b>Yuliana</b>
-                                    <b>Prastiwi</b>
-                                </span>
-                            </h1>
+          <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+              <h2 class="text-white">Get to know me</h2>
 
-                            <div>
-                                <h5>A short portfolio about Yuliana Prastiwi</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="section_2">
-                <div>
-                    <div>
+              <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                  <span class="cd-words-wrapper">
+                      <b class="is-visible">Yuliana</b>
+                      <b>Prastiwi</b>
+                  </span>
+              </h1>
 
-                        <div>
-                            <h2>About Me</h2>
-                        </div>
+              <div class="custom-btn-group">
+                  <h5 class="text-white">A short portfolio about Yuliana Prastiwi</h5>
+              </div>
+          </div>
+      </div>
+  </div>
 
-                        <div>
-
-                            <p><strong>Yuliana</strong> merupakan seorang lulusan baru dari jurusan Teknik Elektro program studi D4 Jaringan Telekomunikasi Digital. Memiliki ketertarikan pada bidang Internet of Things, Mikrokontroler, dan komunikasi Fiber Optik.</p>
-
-                            <p>Dalam menempuh pendidikan sarjana terapan ini, saya mengikuti beberapa program di antaranya yakni Student Mobility Program focusing in Optical Communication in Universiti Tun Hussein Onn Malaysia 2020-2021 selama satu semester dengan nilai yang sangat memuaskan.</p>
-                        </div>
-                    </div>
-                </div>
-                </section>
-	</main>
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-12 me-auto mb-5 mb-lg-0">
-                    <a class="navbar-brand d-flex align-items-center" href="prakerja.html">
-                        <img src="img/logo.png" class="navbar-brand-image img-fluid" alt="Yuli's Portfolio">
-                        <span class="navbar-brand-text">
-                            Yuliana's
-                            <small>Portfolio</small>
-                        </span>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="contact-me.html" class="btn custom-btn">
-
-                        <span>
-                            Contact Me
-                        </span>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-12">
-                        <p class="copyright-text">Copyright © 2024 Yuliana Prastiwi</p>
-                </div>
-
-            </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+  </section>
+<section class="padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-12 text-center">
+        <h2 class="mb-lg-5 mb-4"> </h2>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81B29A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-    </footer>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/2521.jpg" class="d-block w-100" alt="2521">
+          </div>
+          <div class="carousel-item">
+            <img src="img/atypical.jpg" class="d-block w-100" alt="atypical family">
+          </div>
+          <div class="carousel-item">
+            <img src="img/drslump.jpg" class="d-block w-100" alt="dr slump">
+          </div>
+          <div class="carousel-item">
+            <img src="img/samdalri.jpg" class="d-block w-100" alt="samdalri">
+          </div>
+          <div class="carousel-item">
+            <img src="img/qot2.jpg" class="d-block w-100" alt="qot">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="about-section section-padding" id="section_2">
+    <div class="container">
+      <div class="row">
+
+          <div class="col-lg-12 col-12 text-center">
+              <h2 class="mb-lg-5 mb-4">About Me</h2>
+          </div>
+
+          <div class="col-lg-6 col-12 me-auto mb-4 mb-lg-0">
+
+              <p><strong>Yuliana</strong> merupakan seorang lulusan baru dari jurusan Teknik Elektro program studi D4 Jaringan Telekomunikasi Digital. Memiliki ketertarikan pada bidang Internet of Things, Mikrokontroler, dan komunikasi Fiber Optik.</p>
+
+              <p>Dalam menempuh pendidikan sarjana terapan ini, saya mengikuti beberapa program di antaranya yakni Student Mobility Program focusing in Optical Communication in Universiti Tun Hussein Onn Malaysia 2020-2021 selama satu semester dengan nilai yang sangat memuaskan.</p>
+              
+            </div>
+          
+          <div class="col-lg-5 col-md-6 col-12 mb-4 mb-lg-1 mb-md-0">
+              <div class="member-block">
+                
+                  <div class="member-block-image-wrap">
+                    
+                      <img src="img/yuli.jpg" class="member-block-image img-fluid" alt="">
+
+                      <ul class="social-icon">
+                          <li class="social-icon-item">
+                              <a href="https://www.linkedin.com/in/yulianaprastiwi/" class="social-icon-link bi-linkedin"></a>
+                          </li>
+
+                          <li class="social-icon-item">
+                              <a href="#" class="social-icon-link bi-whatsapp"></a>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="member-block-info d-flex align-items-center">
+                      <h4>Bachelor's Graduation</h4>
+
+                      <p class="ms-auto">26th of August 2023</p>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+  </section>
+  <section class="events-section section-bg section-padding" id="section_3">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 col-12">
+                <h2 class="mb-lg-3">Work Experience</h2>
+            </div>
+
+            <div class="row custom-block mb-3">
+                <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+                    <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                        <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">28</h6>
+                        <strong class="text-white">September 2022</strong>
+                        <p><strong class="text-black">until</strong></p>
+                        <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">28</h6>
+                        
+                        <strong class="text-white">June 2022</strong>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                    <div class="custom-block-image-wrap mt-3 mt-lg-0 mt-md-0">
+                            <img src="img/pomi.jpeg" class="custom-block-image img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12 order-3 order-lg-0">
+                    <div class="custom-block-info mt-2 mt-lg-0">
+                        <h3><strong class="text-black">PT. Paiton Operation Maintenance Indonesia</strong></h3>
+                        <p>Internship: IT Intern of Business Process Improvement & Digitalization</p>
+                        <p class="mb-0">Membuat fullstack website dan android platform untuk lembaga CSR PT POMI menggunakan RadSystem Studio terintegrasi dengan Apache Cordova Framework dengan desain UI/UX menggunakan Javascript Vue.js dengan tingkat keberhasilan project telah mencapai 95% dan telah memuaskan user</p>
+
+                        <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                            <div class="mb-4 mb-lg-0">
+                                <div class="d-flex flex-wrap align-items-center mb-1">
+                                    <span class="custom-block-span">Company Location:</span>
+
+                                    <p class="mb-0">Jl Surabaya Situbondo Km. 141 Bhinor, Paiton</p>
+                                </div>
+                            </div>
+                       
+                            <div class="d-flex align-items-center ms-lg-auto">
+                                <button type="button" class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#Modal">Click to Show Modal</a>
+                            </div>
+                            
+                            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">1st Internship Exp</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      This is my first internship experience! ^^
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aight</button>
+                                      <button type="button" class="btn custom-btn">You go gurl!</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row custom-block custom-block-bg">
+                <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+                    <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                        <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">1</h6>
+                        
+                        <strong class="text-white">October 2022</strong>
+                        <p><strong class="text-black">until</strong></p>
+                        <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">31</h6>
+                        
+                        <strong class="text-white">December 2022</strong>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                    <div class="custom-block-image-wrap mt-3 mt-lg-0 mt-md-0">
+                            <img src="img/nexwave.jpeg" class="custom-block-image img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12 order-3 order-lg-0">
+                    <div class="custom-block-info mt-2 mt-lg-0">
+                        <h3><strong class="text-black">PT Nexwave Surabaya</strong></h3>
+                        <p>Internship: Installation Technician</p>
+                        <p class="mb-0">Memasang dan mengintegrasikan tiga komponen RRU dan satu antena di menara BTS, mencapai tingkat penyelesaian 100% dan memastikan konektivitas jaringan yang lancar untuk meningkatkan kualitas panggilan dan keandalan transmisi data.</p>
+
+                        <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                            <div class="mb-4 mb-lg-0">
+                                <div class="d-flex flex-wrap align-items-center mb-1">
+                                    <span class="custom-block-span">Company Location:</span>
+
+                                    <p class="mb-0">RUKO DARMO GALERIA D-16Jl. Mayjend Sungkono 142-144, Kota Surabaya</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center ms-lg-auto">
+                                <button type="button" class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#Modal2">Click to Show Modal</a>
+                            </div>
+                            <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">2nd Internship Exp</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      And this my second internship experience! ^^
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Nice info</button>
+                                      <button type="button" class="btn custom-btn">Nice one!</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="padding">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 col-12 text-center">
+          <h2 class="mb-lg-5 mb-4">My Project</h2>
+          </div>
+      </div>
+  </div>
+  </section>
+    <section class="section-bg-image" id="section_4">
+      <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+
+      <div class="container">
+          <div class="row">
+          
+              <div class="col-lg-4 col-12">
+                  <div class="section-bg-image-block">
+                      <h3 class="mb-lg-3">1st Project</h3>
+                      <p>Pemanfaatan Panas Buang Air Conditioner (Ac) Pada Lemari Pengering Pakaian Berbasis Kontrol Logika Fuzzy</p>
+                      <div class="custom-block-image-wrap mt-3 mt-lg-0 mt-md-0">
+                              <img src="img/Mini Project.jfif" class="custom-block-image img-fluid" alt="">
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                  <div class="section-bg-image-block">
+                      <h3 class="mb-lg-3">2nd Project</h3>
+                      <p>Perancangan Proyek Berbasis Radsystem Studio</p>
+                      <div class="custom-block-image-wrap mt-3 mt-lg-0 mt-md-0">
+                              <img src="img/login.png" class="custom-block-image img-fluid" alt="">
+                      </div>
+                      <div class="custom-block-image-wrap mt-3 mt-lg-0 mt-md-0">
+                              <img src="img/dashboard web.png" class="custom-block-image img-fluid" alt="">
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                  <div class="section-bg-image-block">
+                      <h3 class="mb-lg-3">3rd Project</h3>
+                      <p>Prototype Smart Building Berbasis Internet Of Things</p>
+                      <div class="custom-block-image-wrap mt-3 mt-lg-0 mt-md-0">
+                              <img src="img/building.jpeg" class="custom-block-image img-fluid" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+  </section>
+	</main>
+            <footer class="site-footer" id="footer">
+              <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 me-auto mb-5 mb-lg-0">
+                        <a class="navbar-brand d-flex align-items-center" href="prakerja.html">
+                            <img src="img/logo.png" class="navbar-brand-image img-fluid" alt="">
+                            <span class="navbar-brand-text">
+                                Yuliana's
+                                <small>Portfolio</small>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                        <h5 class="site-footer-title mb-4">Give us your honest review!</h5>
+                        <div class="mb-3">
+                            <label for="forminput" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="forminput" placeholder="username@mail.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="textarea" class="form-label">Type your review here</label>
+                            <textarea class="form-control" id="textarea" rows="3"></textarea>
+                          </div>
+                          <button type="button" class="btn custom-btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                          data-bs-custom-class="custom-tooltip" data-bs-title="Click me!">Submit</button>
+                            <p class="copyright-text">Copyright © 2024 Yuliana Prastiwi</p>
+                    </div>
+
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81B29A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        </footer>
+    <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery.sticky.js"></script>
+        <script src="assets/js/click-scroll.js"></script>
+        <script src="assets/js/animated-headline.js"></script>
+        <script src="assets/js/modernizr.js"></script>
 </body>
 </html>
