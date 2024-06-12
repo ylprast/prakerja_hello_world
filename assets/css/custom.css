@@ -1137,3 +1137,7 @@
     --bs-tooltip-bg: var(--primary-color);
     --bs-tooltip-color: var(--white-color);
   }
+  .error{
+    color: red;
+    font-size: 12px;
+  }
