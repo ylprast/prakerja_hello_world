@@ -18,7 +18,7 @@
 	<header>
     <nav class="navbar navbar-expand-lg">                
       <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="learn.html">
+          <a class="navbar-brand d-flex align-items-center" href="prakerja.html">
               <img src="img/logo.png" class="navbar-brand-image img-fluid" alt="Yuli's Portofolio">
               <span class="navbar-brand-text">
                   Yuliana's
@@ -31,6 +31,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-lg-auto">
+                  <li>
+                  <div class="clock-container nav-link click-scroll">
+                      <div class="clock" id="clock"></div>
+                  </div>
+                  </li>
                   <li>
                       <a class="nav-link click-scroll" href="#section_1">Dashboard</a>
                   </li>
@@ -50,6 +55,7 @@
                   <li>
                       <a class="nav-link click-scroll" href="#footer">Contact Me</a>
                   </li>
+                  
               </ul>
           </div>
       </div>
@@ -116,6 +122,21 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    </div>
+  </div>
+</section>
+<section class="section-padding">
+  <div class="col-lg-6 col-12 text-center" style="margin: auto;">
+    <div class="container">
+      <div class="row">
+      <div class="mb-3">
+      <h1>Bored? Let's do some temperature conversion!</h1>
+      <h3>Temperature Conversion</h3>
+      <input type="number" id="fahrenheit"  style="margin-bottom: 10px;" class="form-control" placeholder="Enter the temperature here in Fahrenheit">
+      <button class="btn custom-btn" style="margin-bottom: 20px;" onclick="convertToFahrenheit()">Convert to Celsius</button>
+      <p style="color: var(--secondary-color);" id="result"></p>
+    </div>
+    </div>
     </div>
   </div>
 </section>
@@ -362,24 +383,32 @@
 
                     <div class="col-lg-5 col-12">
                         <h5 class="site-footer-title mb-4">Give us your honest review!</h5>
+                        <form id="contactForm">
                         <div class="mb-3">
-                            <label for="forminput" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="forminput" placeholder="username@mail.com">
+                            <label for="formemail" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="formemail" placeholder="username@mail.com">
+                            <div id="emailError" class="error"></div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="formphone" class="form-label">Phone Number</label>
+                            <input type="number" class="form-control" id="formphone" placeholder="08123456789">
+                            <div id="phoneError" class="error"></div>
                           </div>
                           <div class="mb-3">
                             <label for="textarea" class="form-label">Type your review here</label>
                             <textarea class="form-control" id="textarea" rows="3"></textarea>
                           </div>
-                          <button type="button" class="btn custom-btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                          <button type="button" onclick="validateForm()" class="btn custom-btn" data-bs-toggle="tooltip" data-bs-placement="top"
                           data-bs-custom-class="custom-tooltip" data-bs-title="Click me!">Submit</button>
                             <p class="copyright-text">Copyright © 2024 Yuliana Prastiwi</p>
                     </div>
-
+                  </form>
                 </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81B29A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
         </footer>
     <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/custom.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/jquery.sticky.js"></script>
         <script src="assets/js/click-scroll.js"></script>
