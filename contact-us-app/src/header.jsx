@@ -21,7 +21,7 @@ function Navbar() {
               <a className="nav-link click-scroll" href="#section_1">Dashboard</a>
             </li>
             <li>
-              <a className="nav-link click-scroll" href="#section_2">About Me</a>
+              <a className="nav-link click-scroll" href="#section_2">About Us</a>
             </li>
             <li>
               <a className="nav-link click-scroll" href="#section_3">Work Experience</a>
