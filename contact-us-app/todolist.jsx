@@ -73,7 +73,7 @@ function TodoApp() {
         <div className="row">
         <div className="col-lg-5 col-12">
           <div className="col-lg-12 col-12 text-center">
-            <h2 className="mb-lg-5 mb-4">Carousel Section</h2>
+            <h2 className="mb-lg-5 mb-4">ToDo List</h2>
           </div>
     <div>
       <h1>Todo List</h1>
