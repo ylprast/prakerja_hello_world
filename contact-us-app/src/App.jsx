@@ -14,6 +14,7 @@ import CarouselComponent from '../carousel.jsx'
 import AboutSection from '../section2.jsx'
 import EventsSection from '../section3.jsx'
 import ProjectComponent from '../project.jsx'
+import TodoApp from '../todolist.jsx'
 import Footer from './footer.jsx'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <AboutSection/>
         <EventsSection/>
         <ProjectComponent/>
+        <TodoApp/>
         <Footer/>
       </div>
     </>
